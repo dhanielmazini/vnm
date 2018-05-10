@@ -7,7 +7,7 @@
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                <img [src]="urlImagem1">
               </figure>
             </div>
             <div class="card-content">          
@@ -16,7 +16,7 @@
                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                 <a href="#">#css</a> <a href="#">#responsive</a>
                 <br><br>
-                <li class="button is-primary">Conheça o projeto</li>
+                <a class="button is-primary" pageScroll [pageScrollOffset]="50" [pageScrollDuration]="300" href="#e1">Conheça o projeto</a>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                <img [src]="urlImagem2">
               </figure>
             </div>
             <div class="card-content">          
@@ -35,7 +35,7 @@
                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                 <a href="#">#css</a> <a href="#">#responsive</a>
                 <br><br>
-                <li class="button is-primary">Conheça o projeto</li>
+                <a class="button is-primary" pageScroll [pageScrollOffset]="50" [pageScrollDuration]="300" href="#e2">Conheça o projeto</a>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                <img [src]="urlImagem3">
               </figure>
             </div>
             <div class="card-content">          
@@ -54,12 +54,105 @@
                 Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                 <a href="#">#css</a> <a href="#">#responsive</a>
                 <br><br>
-                <li class="button is-primary">Conheça o projeto</li>
+                <a class="button is-primary" pageScroll [pageScrollOffset]="50" [pageScrollDuration]="300" href="#e3">Conheça o projeto</a>
               </div>
             </div>
           </div>
         </div>
       
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="e1" class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <div class="column is-8">        
+          <carousel>
+            <slide>
+              <img [src]="urlImagem1" alt="first slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem2" alt="second slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem3" alt="third slide" style="display: block; width: 100%;">
+            </slide>
+          </carousel>
+        </div>
+
+        <div class="column is-4">
+          <div class="box" style="height: 480px">
+            <p class="title">Empreendimento 1</p>
+            <p>Aqui vai todas as informações do empreendimento escolhido</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="e2" class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <div class="column is-4">
+          <div class="box" style="height: 480px">
+            <p class="title">Empreendimento 2</p>
+            <p>Aqui vai todas as informações do empreendimento escolhido</p>
+          </div>
+        </div>
+
+        <div class="column is-8">        
+          <carousel>
+            <slide>
+              <img [src]="urlImagem1" alt="first slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem2" alt="second slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem3" alt="third slide" style="display: block; width: 100%;">
+            </slide>
+          </carousel>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="e3" class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <div class="column is-8">        
+          <carousel>
+            <slide>
+              <img [src]="urlImagem1" alt="first slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem2" alt="second slide" style="display: block; width: 100%;">
+            </slide>
+            <slide>
+              <img [src]="urlImagem3" alt="third slide" style="display: block; width: 100%;">
+            </slide>
+          </carousel>
+        </div>
+
+        <div class="column is-4">
+          <div class="box" style="height: 480px">
+            <p class="title">Empreendimento 3</p>
+            <p>Aqui vai todas as informações do empreendimento escolhido</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
