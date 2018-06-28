@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar is-transparent is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a routerLink='' class="navbar-item">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarVNM" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <div id="navbarVNM" class="navbar-menu">
+        <div class="navbar-end">
+            
+            <a routerLinkActive="is-active" routerLink='' class="navbar-item">
+              Home
+            </a>
+            <a routerLinkActive="is-active" routerLink='empreendimentos' class="navbar-item">
+              Empreendimentos
+            </a>
+            <a routerLinkActive="is-active" routerLink='construcoes' class="navbar-item">
+              Nossas Construções
+            </a>
+            <a routerLinkActive="is-active" routerLink='login' class="navbar-item">
+              Login
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

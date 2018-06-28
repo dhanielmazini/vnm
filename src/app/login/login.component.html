@@ -1,3 +1,44 @@
-<p>
-  login works!
-</p>
+<app-header></app-header>
+<section class="hero has-background-light is-info is-fullheight is-bold is-large">
+  <div class="hero-body">
+    <div class="container">
+        <div class="columns is-multiline is-centered">
+            
+            <div class="column is-4 has-text-centered box">
+              <p>Entre com usuário e senha</p>
+                <br>
+                
+              <div class="field">
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </p>
+                </div>
+                
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Senha">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                
+                <div class="field">  
+                  <p class="control">
+                    <button (click)='LogOn()' class="button is-info">
+                      Login
+                    </button>
+                  </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
